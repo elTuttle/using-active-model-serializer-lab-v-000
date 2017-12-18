@@ -2151,3 +2151,20 @@ Cannot render console from 72.190.146.223! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 72.190.146.223 at 2017-12-18 05:12:15 +0000
 Cannot render console from 72.190.146.223! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/products" for 72.190.146.223 at 2017-12-18 05:13:13 +0000
+Cannot render console from 72.190.146.223! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/30.json" for 72.190.146.223 at 2017-12-18 05:13:14 +0000
+Cannot render console from 72.190.146.223! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"30"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 30]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 42ms (Views: 23.1ms | ActiveRecord: 0.2ms)
